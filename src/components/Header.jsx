@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/img/skyvite-logo.png";
+// import logo from "../assets/img/skyvite-logo.png";
+import redlogo from "../assets/img/logo-skyvite.png";
+
+
 
 export default function Header() {
   return (
     <div>
       <div>
         <div className="topbar">
-          <p className="m-0 text-center">We are just launching Our new product : Skyvite HRMS</p>
+          <p className="m-0 text-center">We are just launching our new product : Skyvite HRMS</p>
         </div>
       </div>
       <nav className="navbar navbar-expand-lg">
@@ -14,7 +17,7 @@ export default function Header() {
         {/* Logo as brand link */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
-            src={logo} // Use imported image
+            src={redlogo} // Use imported image
             alt="SkyVite Logo"
             className="d-inline-block align-top me-2 logo-image"
           />
@@ -38,8 +41,20 @@ export default function Header() {
             </li>
 
             <li className="nav-item">
+              <Link className="nav-link" to="/products">
+                Our Products
+              </Link>
+            </li>
+
+            <li className="nav-item">
               <Link className="nav-link" to="/about">
-                About
+                About Us
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/blog">
+                Blog
               </Link>
             </li>
 
@@ -50,10 +65,10 @@ export default function Header() {
             </li>
           </ul>
           <div className="btngroup">
-            <Link to="/login" className="">
+            <Link to="" className="loginbtn">
               Login
             </Link>
-            <Link to="/signup" className="">
+            <Link to="/signup" className="signupbtn">
               Sign Up
             </Link>
           </div>

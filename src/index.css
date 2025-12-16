@@ -6,7 +6,6 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,6 +17,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -46,9 +46,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,9 +61,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
@@ -70,92 +74,235 @@ button:focus-visible {
 #root {
   width: 100%;
 }
+.navbar-toggler{
+  border:none !important;
+  outline:none !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;  
+  outline: none !important;
+}
+
 .home-section {
-padding: 60px 0;
-background:
-  linear-gradient(rgba(254, 248, 255, 0), rgba(255, 255, 202, 0.242)),
-  url('../src/assets/img/pattern-bg.svg');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+  padding: 60px 0;
+  background: url('../src/assets/img/pattern-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
+
 .logo-image {
-  width: 180px;
+  width: 160px;
   height: auto;
 }
+
 .mainline {
   font-size: 55px;
   font-family: Geist;
   color: #000;
   margin-top: 10px;
   margin-bottom: 10px;
+  line-height: 75px;
 }
+
 .mainpara {
   font-size: 18px;
-    font-family: Geist;
-    color: #434343;
-    margin-bottom: 30px;
-    font-weight: 500;
+  font-family: Geist;
+  color: #434343;
+  margin-bottom: 30px;
+  font-weight: 500;
 }
+
 .threedots {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
 }
-.red, .yellow, .green {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    display: inline-block;
-}
-.red {
-    background-color: #ff605c;
-}
-.yellow {
-    background-color: #ffbd44;
-}
+
+.red,
+.yellow,
 .green {
-    background-color: #00ca4e;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
 }
-.startedbtn{
-    background-color: #000;
-    color: #fff;
-    font-weight: 500;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 15px;
-    text-decoration: none;
-    transition: .5s ease-in-out;
-    font-family: Geist;
+
+.red {
+  background-color: #ff605c;
 }
-.startedbtn:hover{
-    background-color: #434343;
-    color: #fff;
-    text-decoration: none;
+
+.yellow {
+  background-color: #ffbd44;
 }
-.learn-more{
-    color: #000;
-    font-weight: 500;
-    padding: 12px 24px;
-    border: 2px solid #000;
-    border-radius: 15px;
-    text-decoration: none;
-    transition: .5s ease-in-out;
-    font-family: Geist;
+
+.green {
+  background-color: #00ca4e;
 }
-.learn-more:hover{
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-}
-.topbar {
-  background-color: #1b70bb;
-  background: linear-gradient(135deg, #1b70bb, #4fc3f7);padding: 12px 0;  
-}
-.topbar p{
+
+.startedbtn {
+  background-color: #000;
   color: #fff;
-    font-size: 17px;
-    font-family: 'Geist';
-    font-weight: 400;
-} 
+  font-weight: 500;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: .5s ease-in-out;
+  font-family: Geist;
+  transition: 1s ease all;
+}
+
+.startedbtn:hover {
+  background-color: #313131;
+  color: #fff;
+  text-decoration: none;
+}
+
+.learn-more {
+  color: #000;
+  font-weight: 500;
+  padding: 12px 24px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: .5s ease-in-out;
+  font-family: Geist;
+}
+
+.topbar {
+  background: linear-gradient(135deg, #8f9b38, #f32d2d);
+  padding: 8px 0;
+}
+
+.topbar p {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Geist';
+  font-weight: 400;
+}
+
+.btngroup {
+  display: flex;
+  gap: 15px;
+}
+
+/* .btngroup .loginbtn,
+.btngroup .signupbtn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: Geist;
+  font-weight: 500;
+} */
+
+.btngroup .loginbtn {
+  text-decoration: none;
+  color: #000;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: Geist;
+  font-weight: 500;
+  border: 1px solid #000;
+}
+
+.btngroup .signupbtn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: Geist;
+  font-weight: 500;
+}
+
+.navbar {
+  background-color: #fff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  padding-left: 50px !important;
+}
+
+.nav-link {
+  font-size: 16px !important;
+  font-family: 'Geist';
+  color: #000 !important;
+  font-weight: 500 !important;
+  padding: 15px !important;
+
+}
+
+@media screen and (max-width: 992px) {
+  .topbar p {
+    font-size: 14px;
+  }
+  .navbar-nav {
+    padding-left: 0px !important;
+  }
+  .nav-link {
+    padding: 15px 0 !important;
+  }
+  .btngroup{
+    margin-top: 15px;
+  }
+}
+
+.circleheading {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  color: #ff2f2f;
+}
+
+.circleheading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110%;
+  height: 110%;
+  background-image: url('../src/assets/img/circle-heading.svg');
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+
+
+.about-section {
+  padding: 60px 0;
+    background: url(/src/assets/img/section-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+}
+.aboutmotionimg {
+position: absolute;
+    top: 60%;
+    right: 0px;
+    animation: moveUpDown 4s ease-in-out infinite;
+    z-index: 1;
+    opacity: 1;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
