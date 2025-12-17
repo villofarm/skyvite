@@ -314,3 +314,44 @@ button:focus-visible {
     color: #434343;
     line-height: 28px;
   }
+  .fourcard {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 7px 3px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .fourcard h2 {
+    font-size: 28px;
+    font-family: 'Geist';
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: start;
+  }
+  .fourcard p {
+    font-size: 16px;
+    font-family: 'Geist';
+    color: #434343;
+    margin: 0;
+    text-align: start;
+  }
+  .fourcard img {
+    width: 40px;
+    height: auto;
+  }
+.col-md-3:nth-child(1) .fourcard h2 {
+  color: #ff2f2f;
+}
+.col-md-3:nth-child(2) .fourcard h2 {
+  color: #ffb800;
+}
+.col-md-3:nth-child(3) .fourcard h2 {
+  color: #00ca4e;
+}
+.col-md-3:nth-child(4) .fourcard h2 {
+  color: #0066ff;
+}
