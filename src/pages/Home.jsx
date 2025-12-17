@@ -1,5 +1,4 @@
-import aboutimg from "../assets/img/about-dashboard.png";
-import aboutmtnimg from "../assets/img/ai-powered.png";
+import aboutimg from "../assets/img/about-dashboard.webp";
 
 export default function Home() {
   return (
@@ -39,17 +38,21 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="about-section">
+      <section className="about-section position-relative">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-7 d-flex justify-content-center pt-4 position-relative">
-              <img className="img-fluid w-100" src={aboutimg} alt="" />
-              <img className="aboutmotionimg" src={aboutmtnimg} alt="" />
+            <div className="row">
+              <div className="col-md-6 ">
+                <span className="badge">Seamless Experience</span>
+                <h2>Manage Your Institution <br></br><span>On the Go</span></h2>
+                <p>Skyvite is a modern, AI-powered student management software designed to help schools operate smarter and faster. </p>
+              </div>
+              <div className="col-md-6 position-relative">
+                <img className="img-fluid dshboard w-100" src={aboutimg} alt="" />
+              </div>
+              {/* <div className="col-12 p-0 gradientbg">
+                <img decoding="auto" width="1400" height="513" sizes="1500px" srcset="https://framerusercontent.com/images/AwrbWiEWUy4IouNnstLMWwwifU.webp?scale-down-to=512&amp;width=1400&amp;height=513 512w,https://framerusercontent.com/images/AwrbWiEWUy4IouNnstLMWwwifU.webp?scale-down-to=1024&amp;width=1400&amp;height=513 1024w,https://framerusercontent.com/images/AwrbWiEWUy4IouNnstLMWwwifU.webp?width=1400&amp;height=513 1400w" src="https://framerusercontent.com/images/AwrbWiEWUy4IouNnstLMWwwifU.webp?width=1400&amp;height=513" alt="" />
+              </div> */}
             </div>
-            <div className="col-md-5  d-flex justify-content-center pt-4">
-              
-            </div>
-          </div>
         </div>
       </section>
     </div>
