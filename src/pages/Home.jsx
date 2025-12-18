@@ -1,6 +1,5 @@
 import aboutimg from "../assets/img/about-dashboard.webp";
 import firstcard from "../assets/img/school.png";
-
 export default function Home() {
   return (
     <div>

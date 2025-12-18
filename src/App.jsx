@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/about";
-
+import CookieConsent from "./components/CookieConsent";
 export default function App() {
   return (
     <Router>
@@ -17,6 +17,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
           </Routes>
         </main>
+              <CookieConsent />
 
         <Footer />
 

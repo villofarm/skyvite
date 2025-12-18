@@ -7,7 +7,12 @@ export default function Footer() {
         <div className="row">
         <div className="col-md-4 mt-2">
           <img src={footerlogo} alt="SkyVite Logo" style={{ width: '150px', marginBottom: '10px' }} />
-          <p>Your trusted partner in AI-powered solutions.</p>
+          <p>
+            Skyvite is an AI-powered student management software designed to simplify academic operations, smart automation, and a completely paperless workflow.
+          </p>
+          <div className="d-flex">
+
+          </div>
         </div>
         <div className="col-md-2 mt-2">
           <h5>COMPANY</h5>
