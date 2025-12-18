@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Sora;
   line-height: 1.5;
   font-weight: 400;
   width: 100%;
@@ -101,7 +101,7 @@ button:focus-visible {
 
 .mainline {
   font-size: 55px;
-  font-family: Geist;
+  font-family: Sora;
   color: #000;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -110,7 +110,7 @@ button:focus-visible {
 
 .mainpara {
   font-size: 18px;
-  font-family: Geist;
+  font-family: Sora;
   color: #434343;
   margin-bottom: 30px;
   font-weight: 500;
@@ -152,7 +152,7 @@ button:focus-visible {
   border-radius: 15px;
   text-decoration: none;
   transition: .5s ease-in-out;
-  font-family: Geist;
+  font-family: Sora;
   transition: 1s ease all;
 }
 
@@ -170,7 +170,7 @@ button:focus-visible {
   border-radius: 15px;
   text-decoration: none;
   transition: .5s ease-in-out;
-  font-family: Geist;
+  font-family: Sora;
 }
 
 .topbar {
@@ -181,7 +181,7 @@ button:focus-visible {
 .topbar p {
   color: #fff;
   font-size: 16px;
-  font-family: 'Geist';
+  font-family: Sora;
   font-weight: 400;
 }
 
@@ -207,7 +207,7 @@ button:focus-visible {
   background-color: #ffffff;
   padding: 10px 20px;
   border-radius: 10px;
-  font-family: Geist;
+  font-family: Sora;
   font-weight: 500;
   border: 1px solid #000;
 }
@@ -218,7 +218,7 @@ button:focus-visible {
   background-color: #000;
   padding: 10px 20px;
   border-radius: 10px;
-  font-family: Geist;
+  font-family: Sora;
   font-weight: 500;
 }
 
@@ -233,7 +233,7 @@ button:focus-visible {
 
 .nav-link {
   font-size: 16px !important;
-  font-family: 'Geist';
+  font-family: Sora;
   color: #000 !important;
   font-weight: 500 !important;
   padding: 15px !important;
@@ -297,11 +297,11 @@ button:focus-visible {
     border: 1px solid;
     border-radius: 20px;
     margin-bottom: 10px;
-    font-family: 'Geist';
+    font-family: Sora;
   }
   .about-section h2{
     font-size: 32px;
-    font-family: 'Geist';
+    font-family: Sora;
     font-weight: 700;
     margin-bottom: 10px;
   }
@@ -310,7 +310,7 @@ button:focus-visible {
   } */
   .about-section p{
     font-size: 17px;
-    font-family: 'Geist';
+    font-family: Sora;
     color: #434343;
     line-height: 28px;
   }
@@ -326,14 +326,14 @@ button:focus-visible {
   }
   .fourcard h2 {
     font-size: 27px;
-    font-family: 'Geist';
+    font-family: Sora;
     font-weight: 700;
     margin-bottom: 0px;
     text-align: start;
   }
   .fourcard p {
     font-size: 16px;
-    font-family: 'Geist';
+    font-family: Sora;
     color: #434343;
     margin: 0;
     text-align: start;
@@ -366,7 +366,7 @@ button:focus-visible {
 }
 .footer-container h5{
     color: #0f0f0f;
-    font-family: 'Geist';
+  font-family: Sora;
     margin-bottom: 10px;
     font-size: 18px;
     letter-spacing: 1px;
@@ -381,7 +381,7 @@ button:focus-visible {
 .footer-container ul li a{
   color: #fff;
   text-decoration: none;
-  font-family: 'Geist';
+  font-family: Sora;
   cursor: pointer;
   font-size: 14px;
 }
@@ -392,7 +392,7 @@ button:focus-visible {
 }
 .footer-container p{
     color: #4a4a4a;
-    font-family: 'Geist';
+    font-family: Sora;
 }
 .footer-container .social-icons a{
   color: #fff;
@@ -402,4 +402,42 @@ button:focus-visible {
 }
 .footer-container .social-icons a:hover{
   color: #ff2f2f;
+}
+.about-text h2{
+    font-size: 36px;
+    font-family: 'Sora';
+    margin-bottom: 0;
+    color: #742fff;
+}
+
+
+.cinematic-fill {
+  font-family: Sora;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.25;
+  max-width: 80vw;
+  margin: 0 auto;
+
+  --fill: 0%;
+
+  background: linear-gradient(
+    90deg,
+    #000 0%,
+    #000 var(--fill),
+    #cfcfcf var(--fill),
+    #cfcfcf 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cinematic-fill {
+    font-size: 2rem;
+    max-width: 95vw;
+  }
 }

@@ -57,7 +57,7 @@ export default function Footer() {
         
       </div>
       <p className="mb-0 text-center mt-2 mb-2 w-100">
-          © {new Date().getFullYear()} SkyVite. All rights reserved.
+          © {new Date().getFullYear()} Skyvite. All rights reserved.
         </p>
     </footer>
   );
