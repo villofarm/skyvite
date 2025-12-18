@@ -37,7 +37,7 @@ const styles = {
     background: "#fff",
     color: "#000",
     padding: "16px 20px",
-    borderRadius: 8,
+    brderRadius: 8,
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
