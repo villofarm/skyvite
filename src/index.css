@@ -316,20 +316,19 @@ button:focus-visible {
   }
   .fourcard {
     background-color: #fff;
-    padding: 10px;
+    padding: 15px 10px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 7px 3px;
     margin-bottom: 20px;
     display: flex;
     gap: 15px;
     align-items: center;
   }
   .fourcard h2 {
-    font-size: 28px;
+    font-size: 27px;
     font-family: 'Geist';
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     text-align: start;
   }
   .fourcard p {
@@ -354,4 +353,53 @@ button:focus-visible {
 }
 .col-md-3:nth-child(4) .fourcard h2 {
   color: #0066ff;
+}
+.footer-container{
+  background-color: #1a1a1a;
+    padding: 40px 0;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+.footer-container .row{
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.footer-container h5{
+    color: #0f0f0f;
+    font-family: 'Geist';
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.footer-container ul{
+  list-style: none;
+  padding: 0;
+}
+.footer-container ul li{
+  margin-bottom: 5px;
+}
+.footer-container ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Geist';
+  cursor: pointer;
+  font-size: 14px;
+}
+.footer-container .footer-logo{
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.footer-container p{
+    color: #4a4a4a;
+    font-family: 'Geist';
+}
+.footer-container .social-icons a{
+  color: #fff;
+  margin-right: 15px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer-container .social-icons a:hover{
+  color: #ff2f2f;
 }

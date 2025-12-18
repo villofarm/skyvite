@@ -42,25 +42,25 @@ export default function Home() {
       <section className="fourcardsec py-3">
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6 col-6">
               <div className="fourcard">
                 <img src={firstcard} />
                 <div>
                   <h2>300+</h2>
-                  <p>Educational Institutions</p>
+                  <p>Institutes</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6 col-6">
               <div className="fourcard">
                 <img src={firstcard} />
                 <div>
                   <h2>1M+</h2>
-                  <p>Students Managed</p>
+                  <p>Students</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6 col-6">
               <div className="fourcard">
                 <img src={firstcard} />
                 <div>
@@ -69,7 +69,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6 col-6">
               <div className="fourcard">
                 <img src={firstcard} />
                 <div>
