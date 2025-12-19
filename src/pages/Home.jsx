@@ -213,7 +213,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="row px-5">
+    <div className="row">
       <div className="col-md-6">
         <div className="blogmaincard">
           <a>
