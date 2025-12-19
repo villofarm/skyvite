@@ -355,10 +355,10 @@ button:focus-visible {
   color: #0066ff;
 }
 .footer-container{
-  background-color: #1a1a1a;
     padding: 40px 0;
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
+    background: linear-gradient(110deg, #F0FFF4, #fadcd9b6);
 }
 .footer-container .row{
   padding: 20px 0;
@@ -476,18 +476,85 @@ button:focus-visible {
 
 .cardone {
   top: 50px;
-  background: #6b04fd;
+  background: linear-gradient(110deg, #ff8f66, #fff2ee);
 }
 .cardtwo {
   top: 80px;
-  background: #5a03d5;
+  background: linear-gradient(110deg, #f8d2d9, #fff0f2);
 }
 .cardthree {
   top: 110px;
-  background: #4b05ad;
+  background: linear-gradient(110deg, #005bab, #dceeff);
 }
-
 .cardfour {
   top: 140px;
-  background: #2c0076;
+  background: linear-gradient(110deg, #F0FFF4, #FADCD9);
 }
+.cardcontent{
+  padding: 30px;
+}
+
+
+ .blogsection {
+            padding: 50px 0;
+        }
+
+        .blogsection h2 {
+            font-family: Sora;
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 1.25;
+            text-align: center;
+        }
+
+        .blogsection .blogsubheading {
+            color: #434343;
+            margin-top: 10px;
+            font-family: Sora;
+            font-size: 17px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+.blogmaincard {
+    margin: 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #dbe9e0;
+}
+
+        .blogmaincard .blogcontent {
+            padding: 0 15px;
+        }
+
+        .blogmaincard a {
+            cursor: pointer;
+        }
+
+        .blogmaincard a img {
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        .blogmaincard a h3 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 35px;
+            color: #212e44;
+            font-family: SOra;
+            margin-bottom: 10px;
+        }
+
+        .blogmaincard .blogby {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .blogmaincard .blogby span {
+            font-size: 15px;
+            font-family: Sora;
+        }

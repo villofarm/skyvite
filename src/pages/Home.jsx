@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import aboutimg from "../assets/img/about-dashboard.webp";
 import firstcard from "../assets/img/school.png";
+import topschoolerp from "../assets/img/top10schoolerp.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -130,10 +131,54 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 d-flex flex-column justify-content-center align-items-center gap-4">
-              <div className="stickycard cardone">1</div>
-              <div className="stickycard cardtwo">2</div>
-              <div className="stickycard cardthree">3</div>
-              <div className="stickycard cardfour">4</div>
+              <div className="stickycard cardone">
+                <div className="cardcontent">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h3>All-in-One Platform</h3>
+                    </div>
+                    <div className="col-md-6">
+                      <img className="img-fluid" src={aboutimg} alt="All-in-One Platform" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="stickycard cardtwo">
+                <div className="cardcontent">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h3>All-in-One Platform</h3>
+                    </div>
+                    <div className="col-md-6">
+                      <img className="img-fluid" src="https://jupsoft.netlify.app/images/admission.png" alt="All-in-One Platform" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="stickycard cardthree">
+                                <div className="cardcontent">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h3>All-in-One Platform</h3>
+                    </div>
+                    <div className="col-md-6">
+                      <img className="img-fluid" src="https://jupsoft.netlify.app/images/admission.png" alt="All-in-One Platform" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="stickycard cardfour">
+                <div className="cardcontent">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h3>All-in-One Platform</h3>
+                    </div>
+                    <div className="col-md-6">
+                      <img className="img-fluid" src="https://jupsoft.netlify.app/images/admission.png" alt="All-in-One Platform" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -157,6 +202,55 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="blogsection">
+  <div className="container">
+    <div className="row">
+      <div className="col-12">
+        <h2>From Our Blog</h2>
+        <p className="blogsubheading">
+          Ideas and inspiration for better education management every day.
+        </p>
+      </div>
+    </div>
+
+    <div className="row px-5">
+      <div className="col-md-6">
+        <div className="blogmaincard">
+          <a>
+            <img src={topschoolerp} alt="Top 10 School ERP Software" />
+          </a>
+          <div className="blogcontent">
+            <a>
+              <h3>Top 10 School ERP Software in India</h3>
+            </a>
+            <div className="blogby">
+              <span>By Vishant Kamboj</span>
+              <span>Friday, Dec 19 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-md-6">
+        <div className="blogmaincard">
+          <a>
+            <img src={topschoolerp} alt="Top 10 School ERP Software" />
+          </a>
+          <div className="blogcontent">
+            <a>
+              <h3>Top 10 School ERP Software in India</h3>
+            </a>
+            <div className="blogby">
+              <span>By Vishant Kamboj</span>
+              <span>Friday, Dec 19 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }
