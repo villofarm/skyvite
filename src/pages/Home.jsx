@@ -128,10 +128,14 @@ export default function Home() {
           </div>
         </div>
         <div className="container">
-          <div className="stickycard cardone">1</div>
-          <div className="stickycard cardtwo">2</div>
-          <div className="stickycard cardthree">3</div>
-          <div className="stickycard cardfour">4</div>
+          <div className="row">
+            <div className="col-md-12 d-flex flex-column justify-content-center align-items-center gap-4">
+              <div className="stickycard cardone">1</div>
+              <div className="stickycard cardtwo">2</div>
+              <div className="stickycard cardthree">3</div>
+              <div className="stickycard cardfour">4</div>
+            </div>
+          </div>
         </div>
       </section>
 
