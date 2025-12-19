@@ -109,13 +109,29 @@ export default function Home() {
             </div>
 
             <div className="col-md-6 position-relative">
-              <img
-                className="img-fluid dshboard w-100"
-                src={aboutimg}
-                alt=""
-              />
+              <img className="img-fluid dshboard w-100" src={aboutimg} alt="" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="stickycardssection">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <h2>Complete Digital Solutions for Schools</h2>
+              <p>
+                Discover how Skyvite can transform your institution with its
+                innovative features and user-friendly interface.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="stickycard cardone">1</div>
+          <div className="stickycard cardtwo">2</div>
+          <div className="stickycard cardthree">3</div>
+          <div className="stickycard cardfour">4</div>
         </div>
       </section>
 
@@ -124,9 +140,14 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-
-              <p ref={paragraphRef} className="cinematic-fill">
+              <h2 ref={paragraphRef} className="cinematic-fill">
                 Why Choose Skyvite ?
+              </h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Impedit incidunt, harum officia pariatur velit vitae eaque optio
+                adipisci quasi mollitia corporis inventore minus reiciendis
+                culpa cum natus fugit, excepturi non!
               </p>
             </div>
           </div>

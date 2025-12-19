@@ -368,7 +368,7 @@ button:focus-visible {
     color: #0f0f0f;
   font-family: Sora;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 1px;
 }
 .footer-container ul{
@@ -393,6 +393,9 @@ button:focus-visible {
 .footer-container p{
     color: #4a4a4a;
     font-family: Sora;
+    padding-right: 40px;
+    font-size: 15px;
+    line-height: 24px;
 }
 .footer-container .social-icons a{
   color: #fff;
@@ -403,17 +406,10 @@ button:focus-visible {
 .footer-container .social-icons a:hover{
   color: #ff2f2f;
 }
-.about-text h2{
-    font-size: 36px;
-    font-family: 'Sora';
-    margin-bottom: 0;
-    color: #742fff;
-}
-
 
 .cinematic-fill {
   font-family: Sora;
-  font-size: 3rem;
+  font-size: 45px;
   font-weight: 600;
   line-height: 1.25;
   max-width: 80vw;
@@ -440,4 +436,63 @@ button:focus-visible {
     font-size: 2rem;
     max-width: 95vw;
   }
+}
+
+.about-text p{
+  font-family: Sora;
+  font-size: 17px;
+  color: #434343;
+  line-height: 28px;
+  margin-top: 15px;
+}
+
+.stickycardssection {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.stickycardssection h2{
+  font-family: Sora;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.stickycard {
+  width: 100%;
+  margin: 0 20px;
+  box-sizing: border-box;
+  background: #dedede;
+  min-height: 400px;
+  border-radius: 32px;
+  position: sticky;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-family : 'system-ui', sans-serif;
+  font-size: 90px;
+  font-weight: medium;
+  color: #FFF;
+  font-family: Sora;
+}
+
+.cardone {
+  top: 50px;
+  background: #6b04fd;
+}
+.cardtwo {
+  top: 80px;
+  background: #5a03d5;
+}
+.cardthree {
+  top: 110px;
+  background: #4b05ad;
+}
+
+.cardfour {
+  top: 140px;
+  background: #2c0076;
 }
