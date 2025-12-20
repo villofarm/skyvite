@@ -358,7 +358,6 @@ button:focus-visible {
     padding: 40px 0;
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
-    background: linear-gradient(110deg, #F0FFF4, #fadcd9b6);
 }
 .footer-container .row{
   padding: 20px 0;
