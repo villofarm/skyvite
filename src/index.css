@@ -476,18 +476,24 @@ button:focus-visible {
 .cardone {
   top: 50px;
   background: linear-gradient(110deg, #ff8f66, #fff2ee);
+    transform: scale(0.94);
 }
 .cardtwo {
   top: 80px;
   background: linear-gradient(110deg, #f8d2d9, #fff0f2);
+    transform: scale(0.96);
+
 }
 .cardthree {
   top: 110px;
-  background: linear-gradient(110deg, #005bab, #dceeff);
+    transform: scale(0.98);
+  background: linear-gradient(110deg, #F0FFF4, #FADCD9);
+
 }
 .cardfour {
   top: 140px;
-  background: linear-gradient(110deg, #F0FFF4, #FADCD9);
+  background: linear-gradient(110deg, #005bab, #dceeff);
+    transform: scale(1);
 }
 .cardcontent{
   padding: 30px;
