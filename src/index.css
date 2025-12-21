@@ -505,9 +505,7 @@ button:focus-visible {
   background: linear-gradient(180deg, rgb(209 227 255), #fff 42.54%, #d1e3ff);
   transform: scale(1);
 }
-.cardcontent{
-  padding: 25px;
-}
+
 .cardcontent h3{
     font-family: Sora;
     margin-bottom: 15px;
