@@ -4,7 +4,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import aboutimg from "../assets/img/about-dashboard.webp";
 import firstcard from "../assets/img/school.png";
-import topschoolerp from "../assets/img/top10schoolerp.png";
+import greencheck from "../assets/img/green-check.png";
+import topschoolerp from "../assets/img/top10schoolerp.png";                  
+import skyvitedashboard from "../assets/img/skyvite-dashboard-main.png";                 
+import bulletcheck from "../assets/img/check-bullet.png";          
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -107,6 +111,15 @@ export default function Home() {
                 Skyvite is a modern, AI-powered student management software
                 designed to help schools operate smarter and faster.
               </p>
+              <div className="d-flex our-features gap-3 mt-4">
+                <div>
+                  <ul>
+                    <li><img src={greencheck} alt="" />Student Admission</li>
+                    <li><img src={greencheck} alt="" />Online Fee Payment</li>
+                    <li><img src={greencheck} alt="" />Exam Result & Report Card</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
             <div className="col-md-6 position-relative">
@@ -116,73 +129,104 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="stickycardssection">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <h2>Complete Digital Solutions for Schools</h2>
-              <p>
-                Discover how Skyvite can transform your institution with its
-                innovative features and user-friendly interface.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 d-flex flex-column justify-content-center align-items-center gap-4">
-              <div className="stickycard cardone">
-                <div className="cardcontent">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <h3>All-in-One Platform</h3>
-                    </div>
-                    <div className="col-md-6">
-                      <img className="img-fluid" src={aboutimg} alt="All-in-One Platform" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="stickycard cardtwo">
-                <div className="cardcontent">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <h3>All-in-One Platform</h3>
-                    </div>
-                    <div className="col-md-6">
-                      <img className="img-fluid" src="https://jupsoft.netlify.app/images/admission.png" alt="All-in-One Platform" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="stickycard cardthree">
-                                <div className="cardcontent">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <h3>All-in-One Platform</h3>
-                    </div>
-                    <div className="col-md-6">
-                      <img className="img-fluid" src="https://jupsoft.netlify.app/images/admission.png" alt="All-in-One Platform" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="stickycard cardfour">
-                <div className="cardcontent">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <h3>All-in-One Platform</h3>
-                    </div>
-                    <div className="col-md-6">
-                      <img className="img-fluid" src="https://jupsoft.netlify.app/images/admission.png" alt="All-in-One Platform" />
-                    </div>
-                  </div>
-                </div>
+        <section className="stickycardssection">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <h2>Complete Digital Solutions for Schools</h2>
+                <p>
+                  Discover how Skyvite can transform your institution with its
+                  innovative features and user-friendly interface.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 d-flex flex-column justify-content-center align-items-center gap-4">
+                <div className="stickycard cardone">
+                  <div className="cardcontent">
+                    <div className="row">
+                      <div className="col-md-5">
+                        <h3>School ERP</h3>
+                        <p>School ERP streamlines administrative tasks, improving efficiency and communication.</p>
+                        <ul className="cardcontlist">
+                          <li><img src={bulletcheck} alt="" /> Student Information System</li>
+                          <li><img src={bulletcheck} alt="" /> Fee Management</li>
+                          <li><img src={bulletcheck} alt="" /> Attendance Management</li>
+                          <li><img src={bulletcheck} alt="" /> Examination & Report Cards</li>
+                        </ul>
+                      </div>
+                      <div className="col-md-7">
+                        <img className="img-fluid dashboardcard" src={skyvitedashboard} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="stickycard cardtwo">
+                   <div className="cardcontent">
+                    <div className="row">
+                      <div className="col-md-5">
+                        <h3>Admission Management</h3>
+                        <p>The Student Admission Module simplifies application handling, student registration, and communication in one system.</p>
+                        <ul className="cardcontlist">
+                          <li><img src={bulletcheck} alt="" /> Centralized Student Data</li>
+                          <li><img src={bulletcheck} alt="" />Lead Management</li>
+                          <li><img src={bulletcheck} alt="" />Application Tracking</li>
+                          <li><img src={bulletcheck} alt="" />Automated Communication</li>
+                          <li><img src={bulletcheck} alt="" />Payment & Fee Tracking</li>
+                        </ul>
+                      </div>
+                      <div className="col-md-7">
+                        <img className="img-fluid dashboardcard" src={skyvitedashboard} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="stickycard cardthree">
+                   <div className="cardcontent">
+                    <div className="row">
+                      <div className="col-md-5">
+                        <h3>Mobiles App</h3>
+                        <p>Skyite School ERP mobile app is edge-cutting role-based mobile application for both Android & IOS users</p>
+                        <ul className="cardcontlist">
+                          <li><img src={bulletcheck} alt="" />  Student Dashboard</li>
+                          <li><img src={bulletcheck} alt="" />  Online Fee Payment</li>
+                          <li><img src={bulletcheck} alt="" />  Digital Report Cards</li>
+                          <li><img src={bulletcheck} alt="" /> Assignments & Homework</li>
+                          <li><img src={bulletcheck} alt="" />  Push Notifications</li>
+                        </ul>
+                      </div>
+                      <div className="col-md-7">
+                        <img className="img-fluid dashboardcard" src={skyvitedashboard} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="stickycard cardfour">
+                   <div className="cardcontent">
+                    <div className="row">
+                      <div className="col-md-5">
+                        <h3>Admission Management</h3>
+                        <p>The Student Admission Module simplifies application handling, student registration, and communication in one system.</p>
+                        <ul className="cardcontlist">
+                          <li><img src={bulletcheck} alt="" /> Centralized Student Data</li>
+                          <li><img src={bulletcheck} alt="" />Lead Management</li>
+                          <li><img src={bulletcheck} alt="" />Application Tracking</li>
+                          <li><img src={bulletcheck} alt="" />Automated Communication</li>
+                          <li><img src={bulletcheck} alt="" />Payment & Fee Tracking</li>
+                        </ul>
+                      </div>
+                      <div className="col-md-7">
+                        <img className="img-fluid dashboardcard" src={skyvitedashboard} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
       {/* CINEMATIC SCROLL FILL TEXT */}
       <section className="about-text py-5">
