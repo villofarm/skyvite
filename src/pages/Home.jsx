@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import aboutimg from "../assets/img/about-dashboard.webp";
 import firstcard from "../assets/img/school.png";
 import greencheck from "../assets/img/green-check.png";
-import topschoolerp from "../assets/img/top10schoolerp.png";                  
+import topschoolerp from "../assets/img/top-10-school-erp-software.png";                  
 import skyvitedashboard from "../assets/img/skyvite-dashboard-main.png";                 
 import bulletcheck from "../assets/img/check-bullet.png";          
 
