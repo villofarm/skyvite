@@ -133,6 +133,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
+                <span>Why Choose Us ?</span>
                 <h2>Complete Digital Solutions for Schools</h2>
                 <p>
                   Discover how Skyvite can transform your institution with its
@@ -229,7 +230,7 @@ export default function Home() {
         </section>
 
       {/* CINEMATIC SCROLL FILL TEXT */}
-      <section className="about-text py-5">
+      {/* <section className="about-text py-5">
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
@@ -245,12 +246,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="blogsection">
   <div className="container">
     <div className="row">
       <div className="col-12">
-        <h2>From Our Blog</h2>
+        <h2></h2>
+        <h2 ref={paragraphRef} className="cinematic-fill">From Our Blog</h2>
         <p className="blogsubheading">
           Ideas and inspiration for better education management every day.
         </p>

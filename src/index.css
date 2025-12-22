@@ -454,18 +454,30 @@ button:focus-visible {
   gap: 40px;
 }
 
+.stickycardssection span{
+  color: #742fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border: 1px solid;
+    border-radius: 20px;
+    font-family: Sora;
+}
+
 .stickycardssection h2{
   font-family: Sora;
   font-size: 45px;
   font-weight: 600;
   line-height: 1.25;
+  margin-top: 20px;
 }
 .stickycardssection p{
     font-family: Sora;
     font-size: 17px;
     color: #434343;
     line-height: 28px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .stickycard {
@@ -578,9 +590,7 @@ button:focus-visible {
 .blogmaincard {
     margin: 25px;
     background: #ffffff;
-    border-radius: 20px;
     overflow: hidden;
-    border: 1px solid #dbe9e0;
 }
 
         .blogmaincard .blogcontent {
