@@ -5,10 +5,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import aboutimg from "../assets/img/about-dashboard.webp";
 import firstcard from "../assets/img/school.png";
 import greencheck from "../assets/img/green-check.png";
-import topschoolerp from "../assets/img/top-10-school-erp-software.png";                  
-import skyvitedashboard from "../assets/img/skyvite-dashboard-main.png";                 
-import bulletcheck from "../assets/img/check-bullet.png";          
-
+import topschoolerp from "../assets/img/top-10-school-erp-software.jpg";
+import skyvitedashboard from "../assets/img/skyvite-dashboard-main.png";
+import bulletcheck from "../assets/img/check-bullet.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -73,6 +72,18 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="spacer-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <div className="col-md-12 mx-auto mainimgdiv">
+                <img className="img-fluid dashboardcard" src={skyvitedashboard} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FOUR CARDS */}
       <section className="fourcardsec py-3">
         <div className="container">
@@ -114,9 +125,18 @@ export default function Home() {
               <div className="d-flex our-features gap-3 mt-4">
                 <div>
                   <ul>
-                    <li><img src={greencheck} alt="" />Student Admission</li>
-                    <li><img src={greencheck} alt="" />Online Fee Payment</li>
-                    <li><img src={greencheck} alt="" />Exam Result & Report Card</li>
+                    <li>
+                      <img src={greencheck} alt="" />
+                      Student Admission
+                    </li>
+                    <li>
+                      <img src={greencheck} alt="" />
+                      Online Fee Payment
+                    </li>
+                    <li>
+                      <img src={greencheck} alt="" />
+                      Exam Result & Report Card
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -129,105 +149,186 @@ export default function Home() {
         </div>
       </section>
 
-        <section className="stickycardssection">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12 text-center">
-                <span>Why Choose Us ?</span>
-                <h2>Complete Digital Solutions for Schools</h2>
-                <p>
-                  Discover how Skyvite can transform your institution with its
-                  innovative features and user-friendly interface.
-                </p>
-              </div>
+      <section className="stickycardssection">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <span>Why Choose Us ?</span>
+              <h2>Complete Digital Solutions for Schools</h2>
+              <p>
+                Discover how Skyvite can transform your institution with its
+                innovative features and user-friendly interface.
+              </p>
             </div>
           </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12 d-flex flex-column justify-content-center align-items-center gap-4">
-                <div className="stickycard cardone">
-                  <div className="cardcontent">
-                    <div className="row">
-                      <div className="col-md-5">
-                        <h3>School ERP</h3>
-                        <p>School ERP streamlines administrative tasks, improving efficiency and communication.</p>
-                        <ul className="cardcontlist">
-                          <li><img src={bulletcheck} alt="" /> Student Information System</li>
-                          <li><img src={bulletcheck} alt="" /> Fee Management</li>
-                          <li><img src={bulletcheck} alt="" /> Attendance Management</li>
-                          <li><img src={bulletcheck} alt="" /> Examination & Report Cards</li>
-                        </ul>
-                      </div>
-                      <div className="col-md-7">
-                        <img className="img-fluid dashboardcard" src={skyvitedashboard} alt="" />
-                      </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 d-flex flex-column justify-content-center align-items-center gap-4">
+              <div className="stickycard cardone">
+                <div className="cardcontent">
+                  <div className="row">
+                    <div className="col-md-5">
+                      <h3>School ERP</h3>
+                      <p>
+                        School ERP streamlines administrative tasks, improving
+                        efficiency and communication.
+                      </p>
+                      <ul className="cardcontlist">
+                        <li>
+                          <img src={bulletcheck} alt="" /> Student Information
+                          System
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" /> Fee Management
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" /> Attendance Management
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" /> Examination & Report
+                          Cards
+                        </li>
+                      </ul>
                     </div>
-                  </div>
-                </div>
-                <div className="stickycard cardtwo">
-                   <div className="cardcontent">
-                    <div className="row">
-                      <div className="col-md-5">
-                        <h3>Admission Management</h3>
-                        <p>The Student Admission Module simplifies application handling, student registration, and communication in one system.</p>
-                        <ul className="cardcontlist">
-                          <li><img src={bulletcheck} alt="" /> Centralized Student Data</li>
-                          <li><img src={bulletcheck} alt="" />Lead Management</li>
-                          <li><img src={bulletcheck} alt="" />Application Tracking</li>
-                          <li><img src={bulletcheck} alt="" />Automated Communication</li>
-                          <li><img src={bulletcheck} alt="" />Payment & Fee Tracking</li>
-                        </ul>
-                      </div>
-                      <div className="col-md-7">
-                        <img className="img-fluid dashboardcard" src={skyvitedashboard} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="stickycard cardthree">
-                   <div className="cardcontent">
-                    <div className="row">
-                      <div className="col-md-5">
-                        <h3>Mobiles App</h3>
-                        <p>Skyite School ERP mobile app is edge-cutting role-based mobile application for both Android & IOS users</p>
-                        <ul className="cardcontlist">
-                          <li><img src={bulletcheck} alt="" />  Student Dashboard</li>
-                          <li><img src={bulletcheck} alt="" />  Online Fee Payment</li>
-                          <li><img src={bulletcheck} alt="" />  Digital Report Cards</li>
-                          <li><img src={bulletcheck} alt="" /> Assignments & Homework</li>
-                          <li><img src={bulletcheck} alt="" />  Push Notifications</li>
-                        </ul>
-                      </div>
-                      <div className="col-md-7">
-                        <img className="img-fluid dashboardcard" src={skyvitedashboard} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="stickycard cardfour">
-                   <div className="cardcontent">
-                    <div className="row">
-                      <div className="col-md-5">
-                        <h3>Admission Management</h3>
-                        <p>The Student Admission Module simplifies application handling, student registration, and communication in one system.</p>
-                        <ul className="cardcontlist">
-                          <li><img src={bulletcheck} alt="" /> Centralized Student Data</li>
-                          <li><img src={bulletcheck} alt="" />Lead Management</li>
-                          <li><img src={bulletcheck} alt="" />Application Tracking</li>
-                          <li><img src={bulletcheck} alt="" />Automated Communication</li>
-                          <li><img src={bulletcheck} alt="" />Payment & Fee Tracking</li>
-                        </ul>
-                      </div>
-                      <div className="col-md-7">
-                        <img className="img-fluid dashboardcard" src={skyvitedashboard} alt="" />
-                      </div>
+                    <div className="col-md-7">
+                      <img
+                        className="img-fluid dashboardcard"
+                        src={skyvitedashboard}
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
               </div>
+              <div className="stickycard cardtwo">
+                <div className="cardcontent">
+                  <div className="row">
+                    <div className="col-md-5">
+                      <h3>Admission Management</h3>
+                      <p>
+                        The Student Admission Module simplifies application
+                        handling, student registration, and communication in one
+                        system.
+                      </p>
+                      <ul className="cardcontlist">
+                        <li>
+                          <img src={bulletcheck} alt="" /> Centralized Student
+                          Data
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" />
+                          Lead Management
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" />
+                          Application Tracking
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" />
+                          Automated Communication
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" />
+                          Payment & Fee Tracking
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-7">
+                      <img
+                        className="img-fluid dashboardcard"
+                        src={skyvitedashboard}
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="stickycard cardthree">
+                <div className="cardcontent">
+                  <div className="row">
+                    <div className="col-md-5">
+                      <h3>Mobiles App</h3>
+                      <p>
+                        Skyite School ERP mobile app is edge-cutting role-based
+                        mobile application for both Android & IOS users
+                      </p>
+                      <ul className="cardcontlist">
+                        <li>
+                          <img src={bulletcheck} alt="" /> Student Dashboard
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" /> Online Fee Payment
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" /> Digital Report Cards
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" /> Assignments &
+                          Homework
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" /> Push Notifications
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-7">
+                      <img
+                        className="img-fluid dashboardcard"
+                        src={skyvitedashboard}
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="stickycard cardfour">
+                <div className="cardcontent">
+                  <div className="row">
+                    <div className="col-md-5">
+                      <h3>Admission Management</h3>
+                      <p>
+                        The Student Admission Module simplifies application
+                        handling, student registration, and communication in one
+                        system.
+                      </p>
+                      <ul className="cardcontlist">
+                        <li>
+                          <img src={bulletcheck} alt="" /> Centralized Student
+                          Data
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" />
+                          Lead Management
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" />
+                          Application Tracking
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" />
+                          Automated Communication
+                        </li>
+                        <li>
+                          <img src={bulletcheck} alt="" />
+                          Payment & Fee Tracking
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-7">
+                      <img
+                        className="img-fluid dashboardcard"
+                        src={skyvitedashboard}
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
       {/* CINEMATIC SCROLL FILL TEXT */}
       {/* <section className="about-text py-5">
@@ -247,56 +348,60 @@ export default function Home() {
           </div>
         </div>
       </section> */}
+
+      <section></section>
+
       <section className="blogsection">
-  <div className="container">
-    <div className="row">
-      <div className="col-12">
-        <h2></h2>
-        <h2 ref={paragraphRef} className="cinematic-fill">From Our Blog</h2>
-        <p className="blogsubheading">
-          Ideas and inspiration for better education management every day.
-        </p>
-      </div>
-    </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h2></h2>
+              <h2 ref={paragraphRef} className="cinematic-fill">
+                From Our Blog
+              </h2>
+              <p className="blogsubheading">
+                Ideas and inspiration for better education management every day.
+              </p>
+            </div>
+          </div>
 
-    <div className="row">
-      <div className="col-md-6">
-        <div className="blogmaincard">
-          <a>
-            <img src={topschoolerp} alt="Top 10 School ERP Software" />
-          </a>
-          <div className="blogcontent">
-            <a>
-              <h3>Top 10 School ERP Software in India</h3>
-            </a>
-            <div className="blogby">
-              <span>By Vishant Kamboj</span>
-              <span>Friday, Dec 19 2025</span>
+          <div className="row">
+            <div className="col-md-6">
+              <div className="blogmaincard">
+                <a>
+                  <img src={topschoolerp} alt="Top 10 School ERP Software" />
+                </a>
+                <div className="blogcontent">
+                  <a>
+                    <h3>Top 10 School ERP Software in India</h3>
+                  </a>
+                  <div className="blogby">
+                    <span>By Vishant Kamboj</span>
+                    <span>Friday, Dec 19 2025</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-6">
+              <div className="blogmaincard">
+                <a>
+                  <img src={topschoolerp} alt="Top 10 School ERP Software" />
+                </a>
+                <div className="blogcontent">
+                  <a>
+                    <h3>Top 10 School ERP Software in India</h3>
+                  </a>
+                  <div className="blogby">
+                    <span>By Vishant Kamboj</span>
+                    <span>Friday, Dec 19 2025</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="col-md-6">
-        <div className="blogmaincard">
-          <a>
-            <img src={topschoolerp} alt="Top 10 School ERP Software" />
-          </a>
-          <div className="blogcontent">
-            <a>
-              <h3>Top 10 School ERP Software in India</h3>
-            </a>
-            <div className="blogby">
-              <span>By Vishant Kamboj</span>
-              <span>Friday, Dec 19 2025</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
     </div>
   );
 }
