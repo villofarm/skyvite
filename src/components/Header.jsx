@@ -1,80 +1,82 @@
-import { Link } from "react-router-dom";
-// import logo from "../assets/img/skyvite-logo.png";
+import { NavLink, Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import redlogo from "../assets/img/logo-skyvite.png";
-
-
+import * as bootstrap from "bootstrap";
 
 export default function Header() {
+  const location = useLocation();
+
+  // Auto-close navbar on route change (mobile)
+  useEffect(() => {
+    const navCollapse = document.getElementById("navbarNav");
+    if (navCollapse) {
+      const bsCollapse =
+        bootstrap.Collapse.getInstance(navCollapse) ||
+        new bootstrap.Collapse(navCollapse, { toggle: false });
+      bsCollapse.hide();
+    }
+  }, [location]);
+
+  const navClass = ({ isActive }) =>
+    isActive ? "nav-link active" : "nav-link";
+
   return (
-    <div>
-      <div>
-        <div className="topbar">
-          <p className="m-0 text-center">We are just launching our new product : Skyvite HRMS</p>
-        </div>
+    <>
+      <div className="topbar">
+        <p className="m-0 text-center">
+          We are just launching our new product : Skyvite HRMS
+        </p>
       </div>
+
       <nav className="navbar navbar-expand-lg">
-      <div className="container">
-        {/* Logo as brand link */}
-        <Link className="navbar-brand d-flex align-items-center" to="/">
-          <img
-            src={redlogo} // Use imported image
-            alt="SkyVite Logo"
-            className="d-inline-block align-top me-2 logo-image"
-          />
-        </Link>
+        <div className="container">
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+          {/* LEFT → LOGO */}
+          <Link className="navbar-brand" to="/">
+            <img src={redlogo} alt="SkyVite Logo" className="logo-image" />
+          </Link>
 
-        <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Home
-              </Link>
-            </li>
+          {/* MOBILE TOGGLE */}
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/products">
-                Our Products
-              </Link>
-            </li>
+          {/* COLLAPSE AREA */}
+          <div className="collapse navbar-collapse" id="navbarNav">
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                About Us
-              </Link>
-            </li>
+            {/* CENTER → MENU LINKS */}
+            <ul className="navbar-nav mx-lg-auto text-lg-center">
+              <li className="nav-item">
+                <NavLink className={navClass} to="/">Home</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className={navClass} to="/products">Our Products</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className={navClass} to="/about">About Us</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className={navClass} to="/blog">Blog</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className={navClass} to="/contact">Contact</NavLink>
+              </li>
+            </ul>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/blog">
-                Blog
-              </Link>
-            </li>
+            {/* RIGHT → LOGIN / SIGNUP */}
+            <div className="d-flex gap-3 mt-3 mt-lg-0 btngroup">
+              <Link to="/login" className="loginbtn">Login</Link>
+              <Link to="/signup" className="signupbtn">Sign Up</Link>
+            </div>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                Contact
-              </Link>
-            </li>
-          </ul>
-          <div className="btngroup">
-            <Link to="" className="loginbtn">
-              Login
-            </Link>
-            <Link to="/signup" className="signupbtn">
-              Sign Up
-            </Link>
           </div>
         </div>
-      </div>
-    </nav>
-    </div>
+      </nav>
+    </>
   );
 }

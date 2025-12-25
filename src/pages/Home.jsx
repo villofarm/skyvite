@@ -8,6 +8,8 @@ import greencheck from "../assets/img/green-check.png";
 import topschoolerp from "../assets/img/top-10-school-erp-software.jpg";
 import skyvitedashboard from "../assets/img/skyvite-dashboard-main.png";
 import bulletcheck from "../assets/img/check-bullet.png";
+import attdimg from "../assets/img/attendance-snp.png";
+import timetable from "../assets/img/time-table-preview.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -118,7 +120,7 @@ export default function Home() {
                 Manage Your Institution <br />
                 <span>On the Go</span>
               </h2>
-              <p>
+              <p ref={paragraphRef}>
                 Skyvite is a modern, AI-powered student management software
                 designed to help schools operate smarter and faster.
               </p>
@@ -137,6 +139,14 @@ export default function Home() {
                       <img src={greencheck} alt="" />
                       Exam Result & Report Card
                     </li>
+                    <li>
+                      <img src={greencheck} alt="" />
+                      GPS Transport
+                    </li>
+                    <li>
+                      <img src={greencheck} alt="" />
+                      Biometric Attendance Management
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -144,6 +154,10 @@ export default function Home() {
 
             <div className="col-md-6 position-relative">
               <img className="img-fluid dshboard w-100" src={aboutimg} alt="" />
+              <div className="floatingatt">
+                <img src={attdimg} alt="" />
+                <p>Attendance - <span>30/99</span></p>
+              </div>
             </div>
           </div>
         </div>
@@ -153,11 +167,10 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
-              <span>Why Choose Us ?</span>
+              <span>Our Offering </span>
               <h2>Complete Digital Solutions for Schools</h2>
               <p>
-                Discover how Skyvite can transform your institution with its
-                innovative features and user-friendly interface.
+                Skyvite's school management software offers a complete digital solution to manage academics, administration, communication, and reporting in one platform. It simplifies daily operations, reduces paperwork, and helps schools run efficiently.
               </p>
             </div>
           </div>
@@ -349,14 +362,28 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section></section>
+      <section className="abtout-3">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 d-flex flex-column justify-content-center">
+              <h2>Customized Timetable</h2>
+              <p>
+                The Timetable Automatic Customization module efficiently handles schedule changes such as teacher substitutions and period adjustments. It automatically updates timetables in real time, ensuring smooth class operations with minimal administrative effort. <br/><br/> Smart <span className="aibasedtchrsubst">AI-based teacher substitution</span> minimizes disruptions by instantly assigning qualified substitute teachers.
+                </p>
+            </div>
+            <div className="col-md-6 framesdiv">
+              <img className="img-fluid timetable" src={timetable} alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="blogsection">
         <div className="container">
           <div className="row">
             <div className="col-12">
               <h2></h2>
-              <h2 ref={paragraphRef} className="cinematic-fill">
+              <h2>
                 From Our Blog
               </h2>
               <p className="blogsubheading">
