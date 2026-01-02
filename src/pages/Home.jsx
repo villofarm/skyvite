@@ -16,24 +16,60 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const paragraphRef = useRef(null);
 
-  useEffect(() => {
-    if (!paragraphRef.current) return;
+useEffect(() => {
+  gsap.utils.toArray(".cinematic-fill").forEach((el) => {
+    const words = el.innerText.split(" ");
+    el.innerHTML = words.map(w => `<span class="word">${w} </span>`).join("");
+
+    const wordSpans = el.querySelectorAll(".word");
+    const lines = [];
+    let currentLine = [];
+    let lastTop = null;
+
+    wordSpans.forEach((word) => {
+      const top = word.getBoundingClientRect().top;
+      if (lastTop === null || Math.abs(top - lastTop) < 5) {
+        currentLine.push(word);
+      } else {
+        lines.push(currentLine);
+        currentLine = [word];
+      }
+      lastTop = top;
+    });
+    lines.push(currentLine);
+
+    el.innerHTML = lines
+      .map(
+        (line) =>
+          `<span class="cinematic-line">${line
+            .map(w => w.outerHTML)
+            .join("")}</span>`
+      )
+      .join("");
+
+    const lineEls = el.querySelectorAll(".cinematic-line");
 
     gsap.fromTo(
-      paragraphRef.current,
+      lineEls,
       { "--fill": "0%" },
       {
         "--fill": "100%",
+        stagger: 0.3,
         ease: "none",
         scrollTrigger: {
-          trigger: paragraphRef.current,
-          start: "top 75%",
+          trigger: el,
+          start: "top 80%",
           end: "bottom 40%",
           scrub: true,
         },
       }
     );
-  }, []);
+  });
+
+  return () => ScrollTrigger.getAll().forEach(t => t.kill());
+}, []);
+
+
 
   return (
     <div>
@@ -343,32 +379,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CINEMATIC SCROLL FILL TEXT */}
-      {/* <section className="about-text py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <h2 ref={paragraphRef} className="cinematic-fill">
-                Why Choose Skyvite ?
-              </h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Impedit incidunt, harum officia pariatur velit vitae eaque optio
-                adipisci quasi mollitia corporis inventore minus reiciendis
-                culpa cum natus fugit, excepturi non!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <section className="abtout-3">
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex flex-column justify-content-center">
               <h2>Customized Timetable</h2>
               <p>
-                The Timetable Automatic Customization module efficiently handles schedule changes such as teacher substitutions and period adjustments. It automatically updates timetables in real time, ensuring smooth class operations with minimal administrative effort. <br/><br/> Smart <span className="aibasedtchrsubst">AI-based teacher substitution</span> minimizes disruptions by instantly assigning qualified substitute teachers.
+                The Timetable Automatic Customization module efficiently handles schedule changes such as teacher substitutions and period adjustments. It automatically updates timetables in real time, ensuring smooth class operations with minimal administrative effort. Smart <span className="aibasedtchrsubst">AI-based teacher substitution</span> minimizes disruptions by instantly assigning qualified substitute teachers.
                 </p>
             </div>
             <div className="col-md-6 framesdiv">
