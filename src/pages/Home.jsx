@@ -420,7 +420,7 @@ useEffect(() => {
                     <h3>Top 10 School ERP Software in India</h3>
                   </a>
                   <div className="blogby">
-                    <span>By Vishant Kamboj</span>
+                    <span>By Shreyansh Singh</span>
                     <span>Friday, Dec 19 2025</span>
                   </div>
                 </div>
@@ -437,7 +437,7 @@ useEffect(() => {
                     <h3>Top 10 School ERP Software in India</h3>
                   </a>
                   <div className="blogby">
-                    <span>By Vishant Kamboj</span>
+                    <span>By Shreyansh Singh</span>
                     <span>Friday, Dec 19 2025</span>
                   </div>
                 </div>
